@@ -1,0 +1,246 @@
+@font-face {
+  font-family: TTlakes;
+  src: url(font/TTLakes-Bold.woff);
+}
+@font-face {
+  font-family: TTlake;
+  src: url(font/TTLakes-Medium.woff);
+}
+@font-face {
+  font-family: TTlak;
+  src: url(font/TTLakes-DemiBold.woff);
+}
+
+body {
+  width: 320px;
+  height: 597px;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  min-height: 88px;
+  max-height: 88px;
+  align-items: center;
+}
+.menu__img {
+  padding-left: 16px;
+}
+
+.bur {
+  margin-bottom: 5px;
+}
+.main {
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 100%;
+}
+
+.main__title {
+  display: flex;
+}
+.services {
+  display: flex;
+  height: 42px;
+  overflow: scroll;
+  font-family: "TTlake";
+  margin-left: 16px;
+}
+.services::-webkit-scrollbar {
+  display: none;
+}
+
+.main__ser {
+  max-height: 40px;
+  margin-left: 16px;
+  margin-top: 0;
+}
+.services__link {
+  border: none;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-top: 8px;
+  padding-right: 9px;
+  padding-bottom: 8px;
+  border: 2px solid #f8f8f8;
+  font-family: "TTlake";
+  color: #7e7e82;
+  white-space: nowrap;
+}
+.none2 {
+  padding-bottom: 4px;
+}
+
+.services__link:focus {
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+  background-color: white;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 40px;
+  padding-top: 24px;
+  padding-left: 16px;
+  padding-bottom: 24px;
+  margin: 0px;
+  font-family: TTlakes;
+}
+
+.p {
+  height: 135px;
+  padding-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  margin-top: 14px;
+  font-family: TTlake;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1b1c21;
+  text-align: left;
+}
+
+.p2 {
+  font-size: 16px;
+  margin: 0;
+  padding-left: 8px;
+  font-family: TTlak;
+  color: #1b1c21;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tobe {
+  display: flex;
+  height: 24px;
+  margin-bottom: 16px;
+}
+.icon {
+  height: 14px;
+  width: 8px;
+  padding-top: 3px;
+  padding-right: 6px;
+  padding-left: 8px;
+}
+@media (max-width: 320px) {
+  .none1 {
+    display: none;
+  }
+  .v1120 {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .v1120 {
+    display: none;
+  }
+  body {
+    width: 100%;
+    height: 504px;
+  }
+
+  .p {
+    width: 310px;
+    height: 180px;
+    margin-top: 32px;
+    padding-left: 24px;
+    margin-right: 48px;
+  }
+  .mainimg {
+    width: 360px;
+    height: 260px;
+  }
+  .img1 {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 6px;
+  }
+  .services {
+    margin-top: 12px;
+    margin-left: 16px;
+  }
+
+  h1 {
+    padding-left: 24px;
+  }
+
+  .menu {
+    justify-content: space-between;
+  }
+  .first {
+    margin-left: 8px;
+  }
+  .second {
+    margin-right: 24px;
+  }
+  .p1 {
+    margin-bottom: 10px;
+  }
+  .p0 {
+    margin: 0;
+    margin-bottom: 14px;
+  }
+  div.tobe {
+    margin-left: 0;
+  }
+  .p0::after {
+    content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера";
+    padding-top: 20px;
+    display: block;
+  }
+  .none1 {
+    margin-left: 20px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .menu {
+    display: none;
+  }
+  body {
+    height: 535px;
+  }
+  .services {
+    flex-wrap: wrap;
+    overflow: visible;
+    margin-bottom: 19px;
+  }
+  .p {
+    width: 490px;
+    height: 180px;
+    margin-top: 32px;
+    padding-left: 32px;
+    margin-right: 48px;
+  }
+  .mainimg {
+    width: 531px;
+    height: 383px;
+  }
+  .p0::after {
+    content: " Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.";
+  }
+  .services div:last-child {
+    margin-top: 2px;
+  }
+  .v1120 {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    margin-right: 32px;
+  }
+  span {
+    margin-left: 32px;
+    font-family: TTlak;
+  }
+  .main__title {
+    padding-top: 18px;
+  }
+  .services {
+    margin-left: 16px;
+    margin-top: 0;
+  }
+}
