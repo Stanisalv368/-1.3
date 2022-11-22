@@ -1,0 +1,335 @@
+@font-face {
+  font-family: Medium;
+  src: url(font/TTLakes-Medium.woff);
+}
+@font-face {
+  font-family: bold;
+  src: url(font/TTLakes-Bold.woff);
+}
+@font-face {
+  font-family: regular;
+  src: url(font/TTLakes-Regular.woff);
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 0;
+  max-width: 1120px;
+  height: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f8f8f8;
+}
+
+.header__list {
+  list-style: none;
+  display: flex;
+  height: 88px;
+  margin: 0;
+  padding-left: 16px;
+  align-items: center;
+  column-gap: 16px;
+  background-color: #ffffff;
+}
+
+button {
+  cursor: pointer;
+}
+
+.nav__list::after {
+  content: "";
+  background: linear-gradient(
+    270deg,
+    #f8f8f8 16.84%,
+    rgba(248, 248, 248, 0.0001) 100%
+  );
+  width: 24px;
+  height: 40px;
+  position: fixed;
+  right: 0%;
+}
+
+.header__button {
+  border: none;
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.header__servise {
+  position: relative;
+  margin-left: 20px;
+}
+
+.header__servise::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 32px;
+  background: #eaeaea;
+  border-radius: 1px;
+  top: 4px;
+  left: -20px;
+}
+
+.header__servise-lable {
+  display: none;
+}
+.header__button-hiden {
+  display: none;
+}
+
+.logo {
+  width: 95.55px;
+  height: 50.81px;
+}
+
+.main {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.main__h1 {
+  margin: 0;
+  padding-top: 24px;
+  margin-bottom: 24px;
+  padding-left: 16px;
+  font-family: bold;
+  font-size: 28px;
+  position: relative;
+}
+
+.main__h1::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 38px;
+  background: #41f6d7;
+  left: 0;
+  border-radius: 2px;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  overflow: scroll;
+  padding: 0;
+  margin: 0;
+  column-gap: 3px;
+  margin-bottom: 14px;
+  padding-left: 16px;
+}
+
+.nav__list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.nav__item {
+  white-space: nowrap;
+}
+
+.nav__link {
+  text-decoration: none;
+  display: block;
+  font-family: Medium;
+  color: #7e7e82;
+  font-size: 16px;
+  padding: 8px 12px 8px 16px;
+  border: 2px solid transparent;
+}
+
+.nav__link:hover {
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info__text {
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: Medium;
+  font-size: 14px;
+  color: #1b1c21;
+  line-height: 18px;
+  width: 288px;
+}
+.info__p {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.info__button_hiden {
+  border: none;
+  background-color: #f8f8f8;
+  padding-left: 32px;
+  position: relative;
+  margin-bottom: 20px;
+  font-family: medium;
+  font-size: 16px;
+  color: #1b1c21;
+}
+
+.info__button_hiden::before {
+  content: "";
+  background-image: url(image/expand.svg);
+  position: absolute;
+  top: 0;
+  left: 2px;
+  width: 24px;
+  height: 24px;
+}
+
+.info__image-box {
+  width: 320px;
+  height: 230px;
+}
+.info__image {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .header__list,
+  .main__h1,
+  .nav__list,
+  .info__text {
+    padding-left: 24px;
+  }
+
+  .header__button-hiden {
+    display: block;
+  }
+
+  .logo {
+    flex-grow: 1;
+    position: relative;
+    margin-left: 26px;
+  }
+
+  .header__search {
+    padding-right: 24px;
+  }
+
+  .logo:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 32px;
+    background: #eaeaea;
+    border-radius: 1px;
+    top: 9px;
+    left: -20px;
+  }
+  .nav__list {
+    margin-bottom: 32px;
+  }
+
+  .info {
+    column-gap: 48px;
+  }
+
+  .info__text {
+    width: 310px;
+    height: 160px;
+  }
+
+  .info__p {
+    margin-top: 0;
+  }
+
+  .info__image-box {
+    width: 360px;
+    height: 259px;
+  }
+
+  .info__image {
+    border-radius: 6px;
+  }
+
+  .info__p::after {
+    content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера";
+    display: block;
+    padding-top: 10px;
+  }
+}
+@media (min-width: 1120px) {
+  .header__servise::before {
+    display: none;
+  }
+  .nav__list::after {
+    display: none;
+  }
+
+  .header__servise-lable {
+    display: initial;
+    font-family: medium;
+    font-size: 16px;
+    color: #1b1c21;
+    align-self: center;
+  }
+
+  .header__servise,
+  .header__search {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+  .header__search {
+    padding-right: 32px;
+  }
+
+  .header__menu,
+  .logo,
+  .header__button-hiden {
+    display: none;
+  }
+
+  .header__list {
+    justify-content: flex-end;
+  }
+
+  .main__h1,
+  .nav__list,
+  .info__text {
+    padding-left: 32px;
+  }
+
+  .main {
+    margin-top: -88px;
+  }
+
+  .header__button {
+    background-color: #f8f8f8;
+    display: flex;
+    column-gap: 8px;
+  }
+
+  .nav__list {
+    flex-wrap: wrap;
+  }
+
+  .info {
+    column-gap: 36px;
+  }
+  .info__image-box {
+    width: 531px;
+    height: 383px;
+  }
+
+  .info__text {
+    width: 490px;
+    height: 160px;
+    padding-right: 0;
+  }
+
+  .info__p::after {
+    content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близки";
+  }
+}
